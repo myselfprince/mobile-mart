@@ -26,7 +26,7 @@ const Signup = () => {
 
     const data = {name, email, password}
 
-    let res = await fetch(`${process.env.DOMAIN}/api/signup`,{
+    let res = await fetch(`https://mobile-mart-nine.vercel.app/api/signup`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json',

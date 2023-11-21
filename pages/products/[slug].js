@@ -16,7 +16,7 @@ export default function Page({buyNow, addToCart, product, variants}) {
 
   const checkServiceability= async()=>{
     
-    let pins = await fetch(`${process.env.DOMAIN}/api/pincode`)
+    let pins = await fetch(`https://mobile-mart-nine.vercel.app/api/pincode`)
     let pinJson = await pins.json()
     if(pinJson.includes(parseInt(pin))){
       setService(true)
@@ -120,7 +120,7 @@ export default function Page({buyNow, addToCart, product, variants}) {
         </div>
         
 
-        {cartAdd && <div class="font-regular mt-3 block rounded-lg bg-green-500 p-4 text-base leading-5 text-white opacity-100">
+        {cartAdd && <div className="font-regular mt-3 block rounded-lg bg-green-500 p-4 text-base leading-5 text-white opacity-100">
                   Successfully Added to Cart!
                     </div>}
         <div className="mt-9 w-2/4 text-gray-600 flex items-center justify-start">
@@ -162,6 +162,7 @@ export default function Page({buyNow, addToCart, product, variants}) {
 export async function getServerSideProps(context) {
   if (!mongoose.connections[0].readyState) {
     await mongoose.connect(process.env.MONGO_URI);
+    console.log("HEllo",process.env.MONGO_URI)
   }
 
 

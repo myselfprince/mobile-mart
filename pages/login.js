@@ -4,8 +4,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {useRouter} from 'next/router'
 
-
-
 const Login = () => {
   const router = useRouter();
   const [email, setEmail] = useState()
@@ -26,7 +24,7 @@ const Login = () => {
 
     const data = {email, password}
 
-    let res = await fetch(`${process.env.DOMAIN}/api/login`,{
+    let res = await fetch(`https://mobile-mart-nine.vercel.app/api/login`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json',
@@ -53,7 +51,7 @@ const Login = () => {
         });
         setTimeout(()=>{
 
-          router.push(process.env.DOMAIN)
+          router.push(`https://mobile-mart-nine.vercel.app/`)
         },1200)
       
     }
