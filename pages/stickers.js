@@ -13,7 +13,7 @@ const Stickers = ({products}) => {
           {Object.keys(products).length ===0 && <p className="mb-3 text-lg text-gray-500 md:text-xl dark:text-gray-400">Stickers Unavailable, New Stock Comming Soon</p>}
         {Object.keys(products).map((item)=>{ return <div key={products[item]._id} className="lg:w-1/4 md:w-1/2 p-4 w-full">
             <Link passHref={true} href={`/products/${products[item].slug}`}>
-              <div className="block flex justify-center items-center relative rounded overflow-hidden">
+              <div className="flex justify-center items-center relative rounded overflow-hidden">
                 <img
                   alt="ecommerce"
                   className="object-cover object-top"

@@ -50,7 +50,7 @@ const Header = ({cart, addToCart, removeFromCart, clearCart, subTotal, showCart}
     <Link href={"/"}className="mr-5 hover:text-gray-900">Home</Link>
       <Link href={"/mobile"}className="mr-5 hover:text-gray-900">Mobiles</Link>
       <Link href={"/stickers"}className="mr-5 hover:text-gray-900">Stickers</Link>
-      <Link href={"/brands"}className="mr-5 hover:text-gray-900">Brands</Link>
+      {/* <Link href={"/brands"}className="mr-5 hover:text-gray-900">Brands</Link> */}
       <Link href={"/accessories"}className="mr-5 hover:text-gray-900">Accessories</Link>
     </nav>
 
@@ -61,7 +61,9 @@ const Header = ({cart, addToCart, removeFromCart, clearCart, subTotal, showCart}
     <MdAccountCircle className='cursor-pointer focus:outline-none rounded text-4xl mt-4 md:mt-0 text-blue-500 mr-2'/>
       </Link>
 
-    <div className="relative mx-auto text-gray-600 border-2 rounded-xl mr-2">
+
+    {/* SearchBar */}
+    {/* <div className="relative mx-auto text-gray-600 border-2 rounded-xl mr-2">
             <input
               type="search"
               placeholder="Search"
@@ -70,7 +72,7 @@ const Header = ({cart, addToCart, removeFromCart, clearCart, subTotal, showCart}
             <button type="submit" className="absolute right-0 top-0 mt-3 mr-4">
             <ImSearch />
             </button>
-          </div>
+          </div> */}
 
          
 

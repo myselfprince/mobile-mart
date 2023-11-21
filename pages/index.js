@@ -2,14 +2,17 @@
 import Image from 'next/image';
 import HomeShop from '../components/HomeShop';
 
-export default function Home() {
+
+export default function Home(products) {
+  console.log(products)
+  
   return (
     <>
     
 
     <div className="w-11/12 m-auto rounded-xl">
     <Image
-      src="/images/banner.jpg"
+      src="/website banner.png"
       width={1200}
       height={480}
       alt="Mobile Mart Banner"
@@ -19,6 +22,10 @@ export default function Home() {
     </div>
 
     <HomeShop />
+
+    
+
+    
      
     </>
   );

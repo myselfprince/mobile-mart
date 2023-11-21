@@ -10,7 +10,7 @@ const Login = ({domain}) => {
   const [password, setPassword] = useState()
 
 
-  console.log(domain)
+  // console.log(domain)
 
 
   const handleChange=(e)=>{
@@ -36,7 +36,7 @@ const Login = ({domain}) => {
     })
 
     let response = await res.json()
-    console.log(response)
+    // console.log(response)
 
     setEmail("")
     setPassword("")
@@ -155,9 +155,9 @@ const Login = ({domain}) => {
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Don&apos;t have an Account
+            Don&apos;t have an Account?
             <Link href="/signup" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-              Signup
+              &nbsp; Signup
             </Link>
           </p>
         </div>
