@@ -11,7 +11,7 @@ const HomeShop = () => {
 
 
       <div className="xl:w-1/4 md:w-1/2 p-4">
-        <Link href="/mobiles">
+        <Link href="/mobile">
         <div className="bg-gray-100 p-6 rounded-lg">
           <img className="h-[350px] rounded w-full object-cover object-center mb-6" src="/images/mobile.jpg" alt="content" />
           <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">SHOP</h3>
