@@ -7,6 +7,7 @@ import { Ref } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import {useRouter} from 'next/router'
 
+
 function MyApp({ Component, pageProps }) {
 
   const [cart, setCart] = useState({})
@@ -116,7 +117,7 @@ function MyApp({ Component, pageProps }) {
     </Head>
     
     <Header  cart={cart} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal} />
-    <Component cart={cart} buyNow={buyNow} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal} {...pageProps} />
+    <Component domain={"https://mobile-mart-nine.vercel.app"} cart={cart} buyNow={buyNow} addToCart={addToCart} removeFromCart={removeFromCart} clearCart={clearCart} subTotal={subTotal} {...pageProps} />
     <Footer />
     </>
   

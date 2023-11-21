@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Signup = () => {
+const Signup = ({domain}) => {
   const [name, setName] = useState()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
@@ -26,7 +26,7 @@ const Signup = () => {
 
     const data = {name, email, password}
 
-    let res = await fetch(`https://mobile-mart-nine.vercel.app/api/signup`,{
+    let res = await fetch(`${domain}api/signup`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json',
