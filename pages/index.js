@@ -4,7 +4,6 @@ import HomeShop from '../components/HomeShop';
 
 
 export default function Home(products) {
-  console.log(products)
   
   return (
     <>
@@ -12,7 +11,7 @@ export default function Home(products) {
 
     <div className="w-11/12 m-auto rounded-xl">
     <Image
-      src="/website banner.png"
+      src="/website banner2.png"
       width={1200}
       height={480}
       alt="Mobile Mart Banner"

@@ -38,7 +38,7 @@ const HomeShop = () => {
           <img className="h-[350px] rounded w-full object-cover object-center mb-6" src="/images/accessories.jpg" alt="content" />
           <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">SHOP</h3>
           <h2 className="text-lg text-gray-900 font-medium title-font mb-4">ACCESSORIES</h2>
-          <p className="leading-relaxed text-base">"Enhance your mobile experience with our collection of accessories, adding functionality and style to your smartphone.</p>
+          <p className="leading-relaxed text-base">Enhance your mobile experience with our collection of accessories, adding functionality and style to your smartphone.</p>
         </div></Link>
       </div>
      
