@@ -1,0 +1,35 @@
+MOBILES
+
+[
+  {
+    "title": "OnePlus 9 (OnePlus)",
+    "slug": "oneplus-9-oneplusnew",
+    "desc": "Never settle with the powerful OnePlus 9.",
+    "img": "https://m.media-amazon.com/images/I/91ItZJh1FDL._AC_UY218_.jpg",
+    "category": "mobile",
+    "size": "S",
+    "color": "blue",
+    "price": 1099,
+    "availableQty": 10
+  }
+]
+
+
+ACCESSORIES, acs
+
+[
+  {
+    "title": "Wireless Charging Pad",
+    "slug": "wireless-charging-pad",
+    "desc": "Effortlessly charge your devices with this sleek wireless charging pad.",
+    "img": "https://m.media-amazon.com/images/I/31HP1-LkM9L._SX300_SY300_QL70_FMwebp_.jpg",
+    "category": "acs",
+    "color": "black",
+    "price": 1099,
+    "availableQty": 15
+  }
+]
+
+Stickers, sticker
+
+Brands, brand
