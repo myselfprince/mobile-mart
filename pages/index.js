@@ -2,11 +2,8 @@
 import Image from 'next/image';
 import HomeShop from '../components/HomeShop';
 
-
 export default function Home() {
 
-  console.log("env ",process.env.MONGO_URI)
-  console.log("env ",process.env.HELLO_ME)
 
   
   return (

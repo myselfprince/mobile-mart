@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {useRouter} from 'next/router'
 
-const Signup = ({domain}) => {
+const Signup = () => {
   const [name, setName] = useState()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
@@ -28,7 +28,7 @@ const Signup = ({domain}) => {
 
     const data = {name, email, password}
 
-    let res = await fetch(`${domain}/api/signup`,{
+    let res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/signup`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json',

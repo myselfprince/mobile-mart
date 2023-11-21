@@ -4,13 +4,14 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {useRouter} from 'next/router'
 
-const Login = ({domain}) => {
+
+
+const Login = () => {
   const router = useRouter();
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
 
-
-  // console.log(domain)
+  
 
 
   const handleChange=(e)=>{
@@ -27,7 +28,7 @@ const Login = ({domain}) => {
 
     const data = {email, password}
 
-    let res = await fetch(`${domain}/api/login`,{
+    let res = await fetch(`${process.env.NEXT_PUBLIC_DOMAIN}/api/login`,{
       method: 'POST',
       headers:{
         'Content-Type': 'application/json',
@@ -54,7 +55,7 @@ const Login = ({domain}) => {
         });
         setTimeout(()=>{
 
-          router.push(domain)
+          router.push(process.env.NEXT_PUBLIC_DOMAIN)
         },1200)
       
     }
